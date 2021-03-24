@@ -11,6 +11,7 @@ import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import HomePage from './components/HomePage/HomePage'
 import GetDish from './components/GetDish/GetDish'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
   constructor (props) {
@@ -74,6 +75,7 @@ class App extends Component {
         <Route path='/dishes' render={() => (
           <GetDish msgAlert={this.msgAlert} setUser={this.setUser} />
         )} />
+        <Footer user={user} />
       </Fragment>
     )
   }

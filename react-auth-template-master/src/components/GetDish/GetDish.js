@@ -27,7 +27,7 @@ class GetDish extends Component {
   render () {
     return (
       <div className="dishes">
-        <p>Compare dishes</p>
+        <p>Go Dishing</p>
         <div>
           <ReactSwipe
             className="carousel"
@@ -53,8 +53,8 @@ class GetDish extends Component {
               <Image src={pancakes} alt="Pancakes"/>
             </div>
           </ReactSwipe>
-          <button onClick={() => reactSwipeEl.prev()}>Previous</button>
-          <button onClick={() => reactSwipeEl.next()}>Next</button>
+          <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
+          <button onClick={() => reactSwipeEl.next()}>Keep Dishing</button>
         </div>
       </div>
     )

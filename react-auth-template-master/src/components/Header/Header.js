@@ -23,7 +23,7 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar bg="secondary" variant="dark" expand="md">
     <Navbar.Brand href="#">
       GoDish: Keep Food Weird
     </Navbar.Brand>
