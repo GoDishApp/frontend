@@ -10,6 +10,7 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import HomePage from './components/HomePage/HomePage'
+import GetDish from './components/GetDish/GetDish'
 
 class App extends Component {
   constructor (props) {
@@ -67,8 +68,11 @@ class App extends Component {
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
-        <Route path='/' render={() => (
+        <Route path='/home' render={() => (
           <HomePage msgAlert={this.msgAlert} setUser={this.setUser} />
+        )} />
+        <Route path='/dishes' render={() => (
+          <GetDish msgAlert={this.msgAlert} setUser={this.setUser} />
         )} />
       </Fragment>
     )

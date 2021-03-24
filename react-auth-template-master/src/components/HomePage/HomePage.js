@@ -24,6 +24,7 @@ class HomePage extends Component {
   handleClick = event => {
     event.preventDefault()
     // const { zipcode } = this.state
+    // reroute to the /dishes route
   }
 
   render () {
@@ -31,12 +32,10 @@ class HomePage extends Component {
       <div className="homepage">
         <p>Home Page Loaded</p>
         <div>
+          <Button variant="success">All</Button>
           <Button>Vegetarian?</Button>
           <Button>Vegan?</Button>
           <InputGroup className="mb-3" >
-            <InputGroup.Prepend>
-              <Button variant="outline-secondary">Start</Button>
-            </InputGroup.Prepend>
             <FormControl
               name="zip"
               type="text"
@@ -46,8 +45,9 @@ class HomePage extends Component {
               onChange={this.handleInputChange}
             />
           </InputGroup>
+          <Button variant="outline-secondary">Start</Button>
           <Typography id="discrete-slider-small-steps" gutterBottom>
-            Small steps
+            Distance
           </Typography>
           <Slider
             defaultValue={10}
