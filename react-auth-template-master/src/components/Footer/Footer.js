@@ -13,14 +13,11 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const Footer = ({ user }) => (
   <Navbar bg="secondary" variant="dark" expand="md" fixed="bottom">
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ml-auto">
-        {/* <div className="like-it">
-          <Image src={thumb} alt="I like it"/>
-        </div> */}
-      </Nav>
-    </Navbar.Collapse>
+    <Nav className="ml-auto">
+      {/* <div className="like-it">
+        <Image src={thumb} alt="I like it"/>
+      </div> */}
+    </Nav>
   </Navbar>
 )
 
