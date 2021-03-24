@@ -10,9 +10,20 @@ class HomePage extends Component {
     super(props)
 
     this.state = {
-      zipcode: null,
+      zipcode: '',
       startButton: null
     }
+  }
+
+  handleInputChange = event => {
+    event.persist()
+    this.setState({ zipcode: event.target.value })
+    console.log(event.target.value)
+  }
+
+  handleClick = event => {
+    event.preventDefault()
+    // const { zipcode } = this.state
   }
 
   render () {
@@ -20,14 +31,21 @@ class HomePage extends Component {
       <div className="homepage">
         <p>Home Page Loaded</p>
         <div>
-          <InputGroup className="mb-3">
-            <InputGroup.Prepend>
-              <Button variant="outline-secondary">Button</Button>
-            </InputGroup.Prepend>
-            <FormControl aria-describedby="basic-addon1" />
-          </InputGroup>
           <Button>Vegetarian?</Button>
           <Button>Vegan?</Button>
+          <InputGroup className="mb-3" >
+            <InputGroup.Prepend>
+              <Button variant="outline-secondary">Start</Button>
+            </InputGroup.Prepend>
+            <FormControl
+              name="zip"
+              type="text"
+              value={this.state.zipcode}
+              aria-describedby="basic-addon1"
+              placeholder="Type in your zipcode"
+              onChange={this.handleInputChange}
+            />
+          </InputGroup>
           <Typography id="discrete-slider-small-steps" gutterBottom>
             Small steps
           </Typography>
