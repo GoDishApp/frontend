@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactSwipe from 'react-swipe'
 import Image from 'react-bootstrap/Image'
+import { Link } from 'react-router-dom'
 import burger from './burger.jpg'
 import salad from './salad.jpg'
 import acai from './acai_bowl.jpg'
@@ -53,7 +54,9 @@ class GetDish extends Component {
               <Image src={pancakes} alt="Pancakes"/>
             </div>
           </ReactSwipe>
-          <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
+          <Link to={'/restaurant'}>
+            <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
+          </Link>
           <button onClick={() => reactSwipeEl.next()}>Keep Dishing</button>
         </div>
       </div>

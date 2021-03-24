@@ -6,8 +6,9 @@ class Restaurant extends Component {
     super(props)
 
     this.state = {
-      zipcode: '',
-      startButton: null
+      bookButton: null,
+      orderButton: null,
+      websiteButton: null
     }
   }
 
