@@ -15,13 +15,13 @@ class GetDish extends Component {
     super(props)
 
     this.state = {
-      zipcode: '',
-      startButton: null
+      likeButton: false
     }
   }
 
   handleClick = event => {
     event.preventDefault()
+    // set likeButton state to true and redirect to restaurant route
   }
 
   render () {
