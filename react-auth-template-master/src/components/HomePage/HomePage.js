@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import FormControl from 'react-bootstrap/FormControl'
 import Typography from '@material-ui/core/Typography'
 import Slider from '@material-ui/core/Slider'
+import { Link } from 'react-router-dom'
 
 class HomePage extends Component {
   constructor (props) {
@@ -45,7 +46,9 @@ class HomePage extends Component {
               onChange={this.handleInputChange}
             />
           </InputGroup>
-          <Button variant="outline-secondary">Start</Button>
+          <Link to={'/dishes'}>
+            <Button variant="outline-secondary">Start</Button>
+          </Link>
           <Typography id="discrete-slider-small-steps" gutterBottom>
             Distance
           </Typography>
