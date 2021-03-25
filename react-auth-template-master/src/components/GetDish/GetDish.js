@@ -8,6 +8,8 @@ import acai from './acai_bowl.jpg'
 import avocado from './avocado_toast.jpg'
 import noodles from './noodle_bowl.jpg'
 import pancakes from './pancakes.jpg'
+import thumbDown from './thumb-down.png'
+import thumbUp from './thumb-up.png'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -39,7 +41,7 @@ class GetDish extends Component {
             <div>
               <Row className="dish">
                 <div>
-                  <Image src={burger} alt="Burger"/>
+                  <Image src={burger} alt="Burger" className="dishImage"/>
                 </div>
               </Row>
               <Row className="text">
@@ -50,7 +52,7 @@ class GetDish extends Component {
             <div>
               <Row className="dish">
                 <div>
-                  <Image src={salad} alt="Salad"/>
+                  <Image src={salad} alt="Salad" className="dishImage"/>
                 </div>
               </Row>
               <Row className="text">
@@ -61,7 +63,7 @@ class GetDish extends Component {
             <div>
               <Row className="dish">
                 <div>
-                  <Image src={acai} alt="Acai"/>
+                  <Image src={acai} alt="Acai" className="dishImage"/>
                 </div>
               </Row>
               <Row className="text">
@@ -72,7 +74,7 @@ class GetDish extends Component {
             <div>
               <Row className="dish">
                 <div>
-                  <Image src={avocado} alt="Avocado"/>
+                  <Image src={avocado} alt="Avocado" className="dishImage"/>
                 </div>
               </Row>
               <Row className="text">
@@ -83,7 +85,7 @@ class GetDish extends Component {
             <div>
               <Row className="dish">
                 <div>
-                  <Image src={noodles} alt="Noodles"/>
+                  <Image src={noodles} alt="Noodles" className="dishImage"/>
                 </div>
               </Row>
               <Row className="text">
@@ -94,7 +96,7 @@ class GetDish extends Component {
             <div>
               <Row className="dish">
                 <div>
-                  <Image src={pancakes} alt="Pancakes"/>
+                  <Image src={pancakes} alt="Pancakes" className="dishImage"/>
                 </div>
               </Row>
               <Row className="text">
@@ -105,9 +107,9 @@ class GetDish extends Component {
           </ReactSwipe>
 
           <div className="godish-buttons">
-            <button onClick={() => reactSwipeEl.next()}>Keep  Dishing</button>
+            <button className="dishButtons" onClick={ () => reactSwipeEl.next() }><Image style={ { width: '20px' } } src={thumbDown} alt="thumb-down"/></button>
             <Link to={'/restaurant'}>
-              <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
+              <button className="dishButtons" onClick={() => reactSwipeEl.prev()}><Image style={ { width: '20px' } } src={thumbUp} alt="thumb-up"/></button>
             </Link>
           </div>
         </div>

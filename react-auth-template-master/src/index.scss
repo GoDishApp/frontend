@@ -22,7 +22,7 @@ html {
 
 .dishes {
     margin: 2rem;
-    border: 10px solid black;
+    border: 1px solid grey;
 }
 
 .text {
@@ -34,6 +34,20 @@ html {
 
 .dish {
     margin: 3rem;
+}
+
+.dishImage {
+    border-radius: 5%;
+}
+
+.dishFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .restaurant-container {
@@ -59,6 +73,18 @@ html {
 
 .buttons:hover {
     background-color: #43695B;
+}
+
+.dishButtons {
+    background-color: #43695B;
+    border: none;
+    border-radius: 45px;
+    margin: 0 20px;
+    padding: 10px 40px;   
+}
+
+.dishButtons:hover {
+    background-color: $yellow;
 }
 
 #allButton {
