@@ -57,7 +57,7 @@ class GetDish extends Component {
               </Row>
               <Row className="text">
                 <Col>SALAD</Col>
-                <Col>7.2 Mi</Col>
+                <Col>3.3 Mi</Col>
               </Row>
             </div>
             <div>
@@ -68,7 +68,7 @@ class GetDish extends Component {
               </Row>
               <Row className="text">
                 <Col>ACAI</Col>
-                <Col>7.2 Mi</Col>
+                <Col>5.6 Mi</Col>
               </Row>
             </div>
             <div>
@@ -79,7 +79,7 @@ class GetDish extends Component {
               </Row>
               <Row className="text">
                 <Col>AVOCADO</Col>
-                <Col>7.2 Mi</Col>
+                <Col>1.1 Mi</Col>
               </Row>
             </div>
             <div>
@@ -90,7 +90,7 @@ class GetDish extends Component {
               </Row>
               <Row className="text">
                 <Col>NOODLE</Col>
-                <Col>7.2 Mi</Col>
+                <Col>20.0 Mi</Col>
               </Row>
             </div>
             <div>
@@ -101,7 +101,7 @@ class GetDish extends Component {
               </Row>
               <Row className="text">
                 <Col>PANCAKE</Col>
-                <Col>7.2 Mi</Col>
+                <Col>3.4 Mi</Col>
               </Row>
             </div>
           </ReactSwipe>
