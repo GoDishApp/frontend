@@ -7,20 +7,49 @@ import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import axios from 'axios'
+
+const API = 'https://go-dish-app.herokuapp.com/businesses/business'
 
 class Restaurant extends Component {
   constructor (props) {
     super(props)
 
     this.state = {
-      bookButton: null,
-      orderButton: null,
-      websiteButton: null
+      dataReady: false,
+      name: '',
+      address: '',
+      stars: 0
     }
   }
 
   handleClick = event => {
     event.preventDefault()
+  }
+
+  loadData = () => {
+    axios
+      .get(API)
+      .then(res => {
+        const randomRestaurant = res.data[0]
+        this.setState({
+          dataReady: true,
+          name: randomRestaurant.name,
+          address: randomRestaurant.address,
+          stars: randomRestaurant.stars
+        })
+        console.log(
+          'Success, component did mount! Axios made HTTP request to url and loaded data'
+        )
+        console.log(this.state)
+      })
+      .catch(err => {
+        console.log('Error! ', err)
+      })
+  };
+
+  componentDidMount () {
+    this.loadData()
   }
 
   render () {
