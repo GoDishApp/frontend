@@ -6,8 +6,15 @@
     margin: 0 20%;
 }
 
-.restaurant {
+.dishes {
+    margin: 2rem;
+}
+
+.restaurant-container {
+    justify-content: center;
     margin: 1rem;
+    align-items: center;
+    border: 10px solid black;
 }
 
 .modal-buttons {
@@ -24,4 +31,9 @@
 .footer {
     background-color: #A3B5AF;
     height: 5%;
+}
+
+.dish, .godish-buttons {
+    display: flex;
+    justify-content: center;
 }

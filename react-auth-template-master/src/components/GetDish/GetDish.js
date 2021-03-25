@@ -28,7 +28,6 @@ class GetDish extends Component {
   render () {
     return (
       <div className="dishes">
-        <p>Go Dishing</p>
         <div>
           <ReactSwipe
             className="carousel"
@@ -38,26 +37,28 @@ class GetDish extends Component {
             <div className="dish">
               <Image src={burger} alt="Burger"/>
             </div>
-            <div>
+            <div className="dish">
               <Image src={salad} alt="Salad"/>
             </div>
-            <div>
+            <div className="dish">
               <Image src={acai} alt="Acai Bowl"/>
             </div>
-            <div>
+            <div className="dish">
               <Image src={avocado} alt="Avocado Toast"/>
             </div>
-            <div>
+            <div className="dish">
               <Image src={noodles} alt="Noodle Bowl"/>
             </div>
-            <div>
+            <div className="dish">
               <Image src={pancakes} alt="Pancakes"/>
             </div>
           </ReactSwipe>
-          <Link to={'/restaurant'}>
-            <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
-          </Link>
-          <button onClick={() => reactSwipeEl.next()}>Keep Dishing</button>
+          <div className="godish-buttons">
+            <Link to={'/restaurant'}>
+              <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
+            </Link>
+            <button onClick={() => reactSwipeEl.next()}>Keep Dishing</button>
+          </div>
         </div>
       </div>
     )

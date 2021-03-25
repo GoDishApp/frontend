@@ -23,7 +23,7 @@ class Restaurant extends Component {
 
   render () {
     return (
-      <Container className="restaurant">
+      <Container className="restaurant-container">
         <Row className="dish">
           <Image src={burger} alt="Burger" fluid/>
         </Row>
