@@ -5,6 +5,8 @@ import FormControl from 'react-bootstrap/FormControl'
 import Typography from '@material-ui/core/Typography'
 import Slider from '@material-ui/core/Slider'
 import { Link } from 'react-router-dom'
+import Image from 'react-bootstrap/Image'
+import logo from './Serving_dish_icon.jpg'
 
 class HomePage extends Component {
   constructor (props) {
@@ -31,7 +33,12 @@ class HomePage extends Component {
   render () {
     return (
       <div className="homepage">
-        <p>Home Page Loaded</p>
+        <p>
+          Let us find something to eat around you.
+        </p>
+        <div className="dish">
+          <Image src={logo} alt="Logo"/>
+        </div>
         <div>
           <Button variant="success">All</Button>
           <Button>Vegetarian?</Button>
@@ -47,10 +54,10 @@ class HomePage extends Component {
             />
           </InputGroup>
           <Link to={'/dishes'}>
-            <Button variant="outline-secondary">Start</Button>
+            <Button variant="outline-secondary">Start Dishing</Button>
           </Link>
           <Typography id="discrete-slider-small-steps" gutterBottom>
-            Distance
+            Distance (Miles)
           </Typography>
           <Slider
             defaultValue={10}

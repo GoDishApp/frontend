@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Image from 'react-bootstrap/Image'
 import burger from '../GetDish/burger.jpg'
+import maps from './maps.jpg'
+import rating from './Rating.jpg'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -27,18 +29,18 @@ class Restaurant extends Component {
         <Row className="dish">
           <Image src={burger} alt="Burger" fluid/>
         </Row>
-        <Row>
-          <div>Google Maps screenshot</div>
+        <Row className="dish">
+          <Image src={maps} alt="Maps" fluid/>
         </Row>
         <Row className="rest-info">
-          <p>Restaurant Name</p>
+          <h3>Really Good Local Restuarant</h3>
         </Row>
         <Row className="rest-info">
-          <p>Location</p>
+          <p>123 Local Business Ave, Austin, TX 90210</p>
         </Row>
         <Row>
           <Col>$$</Col>
-          <Col>Stars</Col>
+          <Col><Image src={rating} alt="Rating" fluid/></Col>
         </Row>
         <Row>
           <div className="modal-buttons">

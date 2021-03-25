@@ -26,7 +26,7 @@ const alwaysOptions = (
 
 const Header = ({ user }) => (
   <Navbar variant="dark" expand="md" className="navbar">
-    <Navbar.Brand href="#">
+    <Navbar.Brand href="#/home">
       <div>
         <Image src={logo}/>
       </div>

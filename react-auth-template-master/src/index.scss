@@ -2,12 +2,14 @@
 
 .homepage {
     text-align: center;
-    width: 400px;
+    // width: 400px;
     margin: 0 20%;
+    border: 1px solid black;
 }
 
 .dishes {
     margin: 2rem;
+    border: 10px solid black;
 }
 
 .restaurant-container {
@@ -37,3 +39,16 @@
     display: flex;
     justify-content: center;
 }
+
+/*---------------- Media Queries ----------------------------*/
+// /*----TABLETS----*/
+// @media only screen and (min-width: 43em) {
+// }
+  
+// /*----DESKTOP (smaller)----*/
+// @media only screen and (min-width: 62em) {
+// }
+  
+// /*----DESKTOP (larger)----*/
+// @media only screen and (min-width: 62em) {
+// }

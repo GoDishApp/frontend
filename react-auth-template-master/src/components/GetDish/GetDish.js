@@ -8,6 +8,8 @@ import acai from './acai_bowl.jpg'
 import avocado from './avocado_toast.jpg'
 import noodles from './noodle_bowl.jpg'
 import pancakes from './pancakes.jpg'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 let reactSwipeEl
 
@@ -53,11 +55,16 @@ class GetDish extends Component {
               <Image src={pancakes} alt="Pancakes"/>
             </div>
           </ReactSwipe>
+          <Row>
+            <Col>Really Good Local Food</Col>
+            <Col>7.2 Mi</Col>
+          </Row>
+
           <div className="godish-buttons">
+            <button onClick={() => reactSwipeEl.next()}>Keep  Dishing</button>
             <Link to={'/restaurant'}>
               <button onClick={() => reactSwipeEl.prev()}>I Like It</button>
             </Link>
-            <button onClick={() => reactSwipeEl.next()}>Keep Dishing</button>
           </div>
         </div>
       </div>
