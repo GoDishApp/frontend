@@ -40,6 +40,10 @@ html {
     border-radius: 5%;
 }
 
+#mapRow {
+    margin: 10px 0 10px;
+}
+
 .dishFlex {
     display: flex;
     justify-content: center;
@@ -54,7 +58,7 @@ html {
     justify-content: center;
     margin: 1rem;
     align-items: center;
-    border: 10px solid black;
+    border: 1px solid grey;
 }
 
 .buttonParent {
@@ -150,6 +154,15 @@ html {
     display: flex;
     justify-content: center;
     font-family: 'Public Sans', sans-serif;
+}
+
+.rest-info {
+    margin-left: 24%;
+}
+
+#rating-info {
+    margin-left: 22%;
+    width: 400px;
 }
 
 /*---------------- Media Queries ----------------------------*/

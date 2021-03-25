@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Image from 'react-bootstrap/Image'
-import burger from '../GetDish/burger.jpg'
+// import burger from '../GetDish/burger.jpg'
 import maps from './maps.jpg'
+import sickFood from './sickFood.jpg'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -55,10 +56,10 @@ class Restaurant extends Component {
     return (
       <Container className="restaurant-container">
         <Row className="dish">
-          <Image src={burger} alt="Burger" fluid/>
+          <Image src={sickFood} alt="kabab" fluid/>
         </Row>
-        <Row className="dish">
-          <Image src={maps} alt="Maps" fluid/>
+        <Row id="mapRow" className="dish">
+          <Image src={maps} style={ { width: '357px' } } alt="Maps" fluid/>
         </Row>
         <Row className="rest-info">
           <h3>{this.state.name}</h3>
@@ -66,12 +67,13 @@ class Restaurant extends Component {
         <Row className="rest-info">
           <p>{this.state.address}</p>
         </Row>
-        <Row>
+        <Row id="rating-info">
           <Col>$$</Col>
+          <Col>♡</Col>
           <Col>Rating: {this.state.stars}/5</Col>
         </Row>
         <Row>
-          <div className="modal-buttons">
+          <div className="modal-buttons rest-info">
             <Button variant="outline-warning">Book</Button>
             <Button variant="outline-warning">Order</Button>
             <Button variant="outline-warning">Website</Button>
