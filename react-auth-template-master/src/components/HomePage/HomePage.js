@@ -33,47 +33,49 @@ class HomePage extends Component {
   render () {
     return (
       <div className="homepage">
-        <p className="text">
-          Let us find something to eat around you.
-        </p>
-        <div className="dish">
-          <Image src={logo} alt="Logo"/>
-        </div>
-        <div>
-          <div className="buttonParent">
-            <Button id="allButton" className="buttons">All</Button>
-            <Button className="buttons">Vegetarian</Button>
-            <Button className="buttons">Vegan</Button>
-          </div>
-          <InputGroup className="mb-3">
-            <FormControl id="zipField"
-              name="zip"
-              type="text"
-              value={this.state.zipcode}
-              aria-describedby="basic-addon1"
-              placeholder="Enter zipcode ..."
-              onChange={this.handleInputChange}
-            />
-          </InputGroup>
-          <Typography id="discrete-slider-small-steps" gutterBottom>
-            Distance (Miles)
-          </Typography>
-          <div className="sliderContainer">
-            <Slider
-              id="slider"
-              defaultValue={10}
-              aria-labelledby="discrete-slider-small-steps"
-              step={1}
-              marks
-              min={0}
-              max={25}
-              valueLabelDisplay="auto"
-            />
+        <div className="screenContainer">
+          <p className="text">
+            Let us find something to eat around you
+          </p>
+          <div className="dish">
+            <Image src={logo} alt="Logo"/>
           </div>
           <div>
-            <Link to={'/dishes'}>
-              <Button variant="outline-secondary" className="buttons" id="startDishingButton">Start Dishing!</Button>
-            </Link>
+            <div className="buttonParent">
+              <Button id="allButton" className="buttons">All</Button>
+              <Button className="buttons">Vegetarian</Button>
+              <Button className="buttons">Vegan</Button>
+            </div>
+            <InputGroup className="mb-3">
+              <FormControl id="zipField"
+                name="zip"
+                type="text"
+                value={this.state.zipcode}
+                aria-describedby="basic-addon1"
+                placeholder="Enter zipcode ..."
+                onChange={this.handleInputChange}
+              />
+            </InputGroup>
+            <Typography id="discrete-slider-small-steps" gutterBottom>
+              Distance (Miles)
+            </Typography>
+            <div className="sliderContainer">
+              <Slider
+                id="slider"
+                defaultValue={10}
+                aria-labelledby="discrete-slider-small-steps"
+                step={1}
+                marks
+                min={0}
+                max={25}
+                valueLabelDisplay="auto"
+              />
+            </div>
+            <div>
+              <Link to={'/dishes'}>
+                <Button variant="outline-secondary" className="buttons" id="startDishingButton">Start Dishing!</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

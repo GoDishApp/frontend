@@ -13,6 +13,11 @@ html {
     text-align: center;
     margin: 0 20%;
     border: 1px solid gray;
+    // height: 100vh;
+}
+
+.screenContainer {
+    margin-top: 5%;
 }
 
 .dishes {
@@ -23,7 +28,12 @@ html {
 .text {
     text-align: center;
     font-family: 'Public Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #373737;
+}
+
+.dish {
+    margin: 3rem;
 }
 
 .restaurant-container {

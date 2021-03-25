@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
+import './App.css'
 
 import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
@@ -44,8 +45,8 @@ class App extends Component {
     const { msgAlerts, user } = this.state
 
     return (
-      <Fragment>
-        <Header user={user} />
+      <Fragment className="app">
+        <Header user={user} className="header" />
         {msgAlerts.map(msgAlert => (
           <AutoDismissAlert
             key={msgAlert.id}
