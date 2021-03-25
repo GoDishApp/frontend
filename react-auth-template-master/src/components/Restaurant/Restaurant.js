@@ -68,7 +68,7 @@ class Restaurant extends Component {
         </Row>
         <Row>
           <Col>$$</Col>
-          <Col>Rating: {this.state.stars}</Col>
+          <Col>Rating: {this.state.stars}/5</Col>
         </Row>
         <Row>
           <div className="modal-buttons">

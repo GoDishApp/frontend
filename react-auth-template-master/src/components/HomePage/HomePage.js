@@ -40,9 +40,11 @@ class HomePage extends Component {
           <Image src={logo} alt="Logo"/>
         </div>
         <div>
-          <Button variant="success">All</Button>
-          <Button>Vegetarian?</Button>
-          <Button>Vegan?</Button>
+          <div className="buttonParent">
+            <Button id="allButton" className="buttons">All</Button>
+            <Button className="buttons">Vegetarian</Button>
+            <Button className="buttons">Vegan</Button>
+          </div>
           <InputGroup className="mb-3" >
             <FormControl
               name="zip"

@@ -1,10 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
 
+html {
+    font-family: 'Public Sans', sans-serif;
+}
+
 .homepage {
     text-align: center;
-    // width: 400px;
     margin: 0 20%;
-    border: 1px solid black;
+    border: 10px solid black;
 }
 
 .dishes {
@@ -14,7 +17,8 @@
 
 .text {
     text-align: center;
-    font-weight: bold;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 2rem;
 }
 
 .restaurant-container {
@@ -22,6 +26,28 @@
     margin: 1rem;
     align-items: center;
     border: 10px solid black;
+}
+
+.buttonParent {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+.buttons {
+    background-color: white;
+    color: #43695B;
+    border: 1px solid #43695B;
+    border-radius: 45px;
+    margin: 0 10px;
+}
+
+.buttons:hover {
+    background-color: #43695B;
+}
+
+#allButton {
+    padding: 6px 25px;
 }
 
 .modal-buttons {
@@ -33,6 +59,8 @@
 
 .navbar {
     background-color: #A3B5AF;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1rem;
 }
 
 .footer {
@@ -43,17 +71,27 @@
 .dish, .godish-buttons {
     display: flex;
     justify-content: center;
+    font-family: 'Public Sans', sans-serif;
 }
 
 /*---------------- Media Queries ----------------------------*/
-// /*----TABLETS----*/
-// @media only screen and (min-width: 43em) {
-// }
+/*----MOBILE----*/
+@media only screen and (max-width: 42em) {
+    .homepage, .dishes, .restaurant-container {
+        // background-color: yellowgreen;
+    }
+}
+
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+    .homepage, .dishes, .restaurant-container  {
+        // background-color: burlywood;
+    }
+}
   
-// /*----DESKTOP (smaller)----*/
-// @media only screen and (min-width: 62em) {
-// }
-  
-// /*----DESKTOP (larger)----*/
-// @media only screen and (min-width: 62em) {
-// }
+/*----DESKTOP----*/
+@media only screen and (min-width: 62em) {
+    .homepage, .dishes, .restaurant-container {
+        // background-color: salmon;
+    }
+}
