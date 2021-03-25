@@ -81,6 +81,7 @@ html {
 
 .dishButtons {
     background-color: #43695B;
+    color: white;
     border: none;
     border-radius: 45px;
     margin: 20px 20px;
@@ -135,8 +136,9 @@ html {
 .modal-buttons {
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem;
-    width: 400px;
+    margin: 1rem 11rem;
+    padding: 1rem;
+    width: 500px;
 }
 
 .navbar {
@@ -163,6 +165,17 @@ html {
 #rating-info {
     margin-left: 22%;
     width: 400px;
+}
+
+.leaveButtons {
+    background-color: white;
+    border: 1px solid $yellow;
+    color: $yellow;
+}
+
+.leaveButtons:hover {
+    background-color: $yellow;
+    color: white;
 }
 
 /*---------------- Media Queries ----------------------------*/

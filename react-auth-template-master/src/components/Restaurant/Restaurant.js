@@ -74,9 +74,9 @@ class Restaurant extends Component {
         </Row>
         <Row>
           <div className="modal-buttons rest-info">
-            <Button variant="outline-warning">Book</Button>
-            <Button variant="outline-warning">Order</Button>
-            <Button variant="outline-warning">Website</Button>
+            <Button className="buttons leaveButtons" variant="outline-warning">Book</Button>
+            <Button className="buttons leaveButtons" variant="outline-warning">Order</Button>
+            <Button className="buttons leaveButtons" variant="outline-warning">Website</Button>
           </div>
         </Row>
       </Container>
