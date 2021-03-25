@@ -36,29 +36,73 @@ class GetDish extends Component {
             swipeOptions={{ continuous: false }}
             ref={el => (reactSwipeEl = el)}
           >
-            <div className="dish">
-              <Image src={burger} alt="Burger"/>
+            <div>
+              <Row className="dish">
+                <div>
+                  <Image src={burger} alt="Burger"/>
+                </div>
+              </Row>
+              <Row className="text">
+                <Col>BURGER</Col>
+                <Col>7.2 Mi</Col>
+              </Row>
             </div>
-            <div className="dish">
-              <Image src={salad} alt="Salad"/>
+            <div>
+              <Row className="dish">
+                <div>
+                  <Image src={salad} alt="Salad"/>
+                </div>
+              </Row>
+              <Row className="text">
+                <Col>SALAD</Col>
+                <Col>7.2 Mi</Col>
+              </Row>
             </div>
-            <div className="dish">
-              <Image src={acai} alt="Acai Bowl"/>
+            <div>
+              <Row className="dish">
+                <div>
+                  <Image src={acai} alt="Acai"/>
+                </div>
+              </Row>
+              <Row className="text">
+                <Col>ACAI</Col>
+                <Col>7.2 Mi</Col>
+              </Row>
             </div>
-            <div className="dish">
-              <Image src={avocado} alt="Avocado Toast"/>
+            <div>
+              <Row className="dish">
+                <div>
+                  <Image src={avocado} alt="Avocado"/>
+                </div>
+              </Row>
+              <Row className="text">
+                <Col>AVOCADO</Col>
+                <Col>7.2 Mi</Col>
+              </Row>
             </div>
-            <div className="dish">
-              <Image src={noodles} alt="Noodle Bowl"/>
+            <div>
+              <Row className="dish">
+                <div>
+                  <Image src={noodles} alt="Noodles"/>
+                </div>
+              </Row>
+              <Row className="text">
+                <Col>NOODLE</Col>
+                <Col>7.2 Mi</Col>
+              </Row>
             </div>
-            <div className="dish">
-              <Image src={pancakes} alt="Pancakes"/>
+            <div>
+              <Row className="dish">
+                <div>
+                  <Image src={pancakes} alt="Pancakes"/>
+                </div>
+              </Row>
+              <Row className="text">
+                <Col>PANCAKE</Col>
+                <Col>7.2 Mi</Col>
+              </Row>
             </div>
           </ReactSwipe>
-          <Row>
-            <Col>Really Good Local Food</Col>
-            <Col>7.2 Mi</Col>
-          </Row>
 
           <div className="godish-buttons">
             <button onClick={() => reactSwipeEl.next()}>Keep  Dishing</button>

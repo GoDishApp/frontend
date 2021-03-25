@@ -33,7 +33,7 @@ class HomePage extends Component {
   render () {
     return (
       <div className="homepage">
-        <p>
+        <p className="text">
           Let us find something to eat around you.
         </p>
         <div className="dish">

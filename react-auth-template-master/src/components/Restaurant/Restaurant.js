@@ -33,7 +33,7 @@ class Restaurant extends Component {
           <Image src={maps} alt="Maps" fluid/>
         </Row>
         <Row className="rest-info">
-          <h3>Really Good Local Restuarant</h3>
+          <h3>Really Good Local Restaurant</h3>
         </Row>
         <Row className="rest-info">
           <p>123 Local Business Ave, Austin, TX 90210</p>
