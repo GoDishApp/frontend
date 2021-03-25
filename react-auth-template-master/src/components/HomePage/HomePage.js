@@ -45,31 +45,36 @@ class HomePage extends Component {
             <Button className="buttons">Vegetarian</Button>
             <Button className="buttons">Vegan</Button>
           </div>
-          <InputGroup className="mb-3" >
-            <FormControl
+          <InputGroup className="mb-3">
+            <FormControl id="zipField"
               name="zip"
               type="text"
               value={this.state.zipcode}
               aria-describedby="basic-addon1"
-              placeholder="Type in your zipcode"
+              placeholder="Enter zipcode ..."
               onChange={this.handleInputChange}
             />
           </InputGroup>
-          <Link to={'/dishes'}>
-            <Button variant="outline-secondary">Start Dishing</Button>
-          </Link>
           <Typography id="discrete-slider-small-steps" gutterBottom>
             Distance (Miles)
           </Typography>
-          <Slider
-            defaultValue={10}
-            aria-labelledby="discrete-slider-small-steps"
-            step={1}
-            marks
-            min={0}
-            max={25}
-            valueLabelDisplay="auto"
-          />
+          <div className="sliderContainer">
+            <Slider
+              id="slider"
+              defaultValue={10}
+              aria-labelledby="discrete-slider-small-steps"
+              step={1}
+              marks
+              min={0}
+              max={25}
+              valueLabelDisplay="auto"
+            />
+          </div>
+          <div>
+            <Link to={'/dishes'}>
+              <Button variant="outline-secondary" className="buttons" id="startDishingButton">Start Dishing!</Button>
+            </Link>
+          </div>
         </div>
       </div>
     )

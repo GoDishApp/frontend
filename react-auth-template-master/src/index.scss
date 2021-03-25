@@ -1,5 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
+$blue: #005f86;
+$yellow: #F2A900;
+$red: #BF5700;
+$green: #43695B;
+
 html {
     font-family: 'Public Sans', sans-serif;
 }
@@ -7,7 +12,7 @@ html {
 .homepage {
     text-align: center;
     margin: 0 20%;
-    border: 10px solid black;
+    border: 1px solid gray;
 }
 
 .dishes {
@@ -48,6 +53,39 @@ html {
 
 #allButton {
     padding: 6px 25px;
+}
+
+#startDishingButton {
+    border: 1px solid $yellow;
+    background-color: $yellow;
+    color: white;
+    margin: 50px 0;
+    padding:  10px 100px;
+    font-size: 1.5rem;
+}
+
+#startDishingButton:hover {
+    background-color: white;
+    color: $yellow;
+}
+
+#zipField {
+    border: .2px transparent #e7e7e7;
+    border-radius: 45px;
+    opacity: .6;
+    margin: 0 85px;
+    background-color: #e7e7e7;
+    color: #979797;
+}
+
+.sliderContainer {
+    display: grid;
+    width: 80%;
+    margin-left: 3rem;
+}
+
+#slider {
+    place-items: center;
 }
 
 .modal-buttons {
