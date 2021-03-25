@@ -2,7 +2,7 @@
 
 .homepage {
     text-align: center;
-    width: 300px;
+    width: 400px;
     margin: 0 20%;
 }
 
@@ -14,4 +14,14 @@
     display: flex;
     justify-content: space-evenly;
     margin: 1rem;
+    width: 400px;
+}
+
+.navbar {
+    background-color: #A3B5AF;
+}
+
+.footer {
+    background-color: #A3B5AF;
+    height: 5%;
 }

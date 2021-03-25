@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Image from 'react-bootstrap/Image'
 import burger from '../GetDish/burger.jpg'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 class Restaurant extends Component {
   constructor (props) {
@@ -20,21 +23,31 @@ class Restaurant extends Component {
 
   render () {
     return (
-      <div className="restaurant">
-        <p>Restaurant Page</p>
-        <div className="dish">
+      <Container className="restaurant">
+        <Row className="dish">
           <Image src={burger} alt="Burger" fluid/>
-        </div>
-        <div>Google Maps screenshot</div>
-        <p>Restaurant Name</p>
-        <p>Location</p>
-        <div>$$ | Stars</div>
-        <div className="modal-buttons">
-          <Button variant="outline-secondary">Book</Button>
-          <Button variant="outline-secondary">Order</Button>
-          <Button variant="outline-secondary">Website</Button>
-        </div>
-      </div>
+        </Row>
+        <Row>
+          <div>Google Maps screenshot</div>
+        </Row>
+        <Row className="rest-info">
+          <p>Restaurant Name</p>
+        </Row>
+        <Row className="rest-info">
+          <p>Location</p>
+        </Row>
+        <Row>
+          <Col>$$</Col>
+          <Col>Stars</Col>
+        </Row>
+        <Row>
+          <div className="modal-buttons">
+            <Button variant="outline-warning">Book</Button>
+            <Button variant="outline-warning">Order</Button>
+            <Button variant="outline-warning">Website</Button>
+          </div>
+        </Row>
+      </Container>
     )
   }
 }

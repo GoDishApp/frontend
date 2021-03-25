@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import logo from './LOGO_ON_GREEN.png'
+import Image from 'react-bootstrap/Image'
 
 const authenticatedOptions = (
   <Fragment>
@@ -23,9 +25,12 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="secondary" variant="dark" expand="md">
+  <Navbar variant="dark" expand="md" className="navbar">
     <Navbar.Brand href="#">
-      GoDish: Keep Food Weird
+      <div>
+        <Image src={logo}/>
+      </div>
+      <p id="sub">Keep Food Weird</p>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

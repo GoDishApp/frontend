@@ -12,7 +12,7 @@ import Navbar from 'react-bootstrap/Navbar'
 // )
 
 const Footer = ({ user }) => (
-  <Navbar bg="secondary" variant="dark" expand="md" fixed="bottom">
+  <Navbar className="footer" variant="dark" expand="md" fixed="bottom">
     <Nav className="ml-auto">
       {/* <div className="like-it">
         <Image src={thumb} alt="I like it"/>
