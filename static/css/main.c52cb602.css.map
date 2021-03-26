@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACI,YACA,WAAa,CAGjB,QACI,WACA,UAAY","file":"static/css/main.c52cb602.css","sourcesContent":[".app {\n    width: 100vh;\n    height: auto;\n}\n\n.header {\n    width: 100%;\n    height: 10%;\n}\n\n.container {\n\n}\n\n\n// WEBPACK FOOTER //\n// ./src/App.css"],"sourceRoot":""}
